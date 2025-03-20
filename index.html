@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto TCIV (HTML) 2025</title>
+
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
             font-family: Arial, sans-serif;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             min-height: 100vh;
             background-image: url('img.jpg');
@@ -64,6 +65,18 @@
         .dropdown-content a:hover { background-color: #ddd; }
         .dropdown:hover .dropdown-content { display: block; }
         .dropbtn:hover { background-color: #45a049; }
+        .integrantes {
+            margin-top: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            width: 90%;
+            max-width: 600px;
+        }
+        .integrantes h2 {
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -78,7 +91,6 @@
                 <a href="https://es.wikipedia.org/wiki/Serranidae">Mero (Serranidae)</a>
             </div>
         </div>
-
         <div class="dropdown">
             <button class="dropbtn">Mamíferos</button>
             <div class="dropdown-content">
@@ -89,14 +101,12 @@
                 <a href="oso.html">Oso (<i>Ursidae</i>)</a>
             </div>
         </div>
-
         <div class="dropdown">
             <button class="dropbtn">Anfibios</button>
             <div class="dropdown-content">
                 <a href="anfibios.html">Menú de Anfibios</a>
             </div>
         </div>
-
         <div class="dropdown">
             <button class="dropbtn">Aves</button>
             <div class="dropdown-content">
@@ -107,17 +117,24 @@
                 <a href="https://es.wikipedia.org/wiki/Phoenicopteridae">Flamenco (Phoenicopteridae)</a>
             </div>
         </div>
-
         <div class="dropdown">
             <button class="dropbtn">Reptiles</button>
             <div class="dropdown-content">
                 <a href="cocodrilo.html">Cocodrilo (Crocodylidae)</a>
-                <a href="serpientes.html">Serpiente(Serpentes)</a>
-                <a href="tortuga.html">Tortuga(Testudines)</a>
+                <a href="serpientes.html">Serpiente (Serpentes)</a>
+                <a href="tortuga.html">Tortuga (Testudines)</a>
                 <a href="iguana.html">Iguana (Iguana iguana)</a>
                 <a href="camaleon.html">Camaleón (Chamaeleonidae)</a>
             </div>
         </div>
+    </div>
+    
+    <div class="integrantes">
+        <h2>INTEGRANTES DEL EQUIPO:</h2>
+        <p>HECTOR EMMANUEL PACHO NOVELO</p>
+        <p>HENDRICK ABIRAM POOT MARTIN</p>
+        <p>CAMILA ALEJANDRA SOLIS CHAVES</p>
+        <p>PEDRO MIGUEL PASCUAL ROMERO</p>
     </div>
 </body>
 </html>
