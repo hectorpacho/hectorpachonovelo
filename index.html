@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto TCIV (HTML) 2025</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url('img.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 20px;
+        }
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+        }
+        .dropdown { position: relative; }
+        .dropbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 18px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+            width: 100%;
+            max-width: 150px;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            border-bottom: 1px solid #ddd;
+        }
+        .dropdown-content a:hover { background-color: #ddd; }
+        .dropdown:hover .dropdown-content { display: block; }
+        .dropbtn:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="dropdown">
+            <button class="dropbtn">Peces</button>
+            <div class="dropdown-content">
+                <a href="https://es.wikipedia.org/wiki/Selachimorpha">Tiburón (Selachimorpha)</a>
+                <a href="https://es.wikipedia.org/wiki/Salmo_salar">Salmón (Salmo)</a>
+                <a href="https://es.wikipedia.org/wiki/Amphiprioninae">Pez payaso (Amphiprioninae)</a>
+                <a href="https://es.wikipedia.org/wiki/Thunnini">Atún (Thunnini)</a>
+                <a href="https://es.wikipedia.org/wiki/Serranidae">Mero (Serranidae)</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Mamíferos</button>
+            <div class="dropdown-content">
+                <a href="leon.html">León (<i>Panthera leo</i>)</a>
+                <a href="elefante.html">Elefante (<i>Loxodonta africana</i>)</a>
+                <a href="delfin.html">Delfín (<i>Delphinus delphis</i>)</a>
+                <a href="lobo.html">Lobo (<i>Canis lupus</i>)</a>
+                <a href="oso.html">Oso (<i>Ursidae</i>)</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Anfibios</button>
+            <div class="dropdown-content">
+                <a href="anfibios.html">Menú de Anfibios</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Aves</button>
+            <div class="dropdown-content">
+                <a href="https://es.wikipedia.org/wiki/Aquila">Águila (Aquila)</a>
+                <a href="https://es.wikipedia.org/wiki/Psittacidae">Loro (Psittacidae)</a>
+                <a href="https://es.wikipedia.org/wiki/Strigiformes">Búho (Strigiformes)</a>
+                <a href="https://es.wikipedia.org/wiki/Spheniscidae">Pingüino (Spheniscidae)</a>
+                <a href="https://es.wikipedia.org/wiki/Phoenicopteridae">Flamenco (Phoenicopteridae)</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Reptiles</button>
+            <div class="dropdown-content">
+                <a href="cocodrilo.html">Cocodrilo (Crocodylidae)</a>
+                <a href="serpientes.html">Serpiente(Serpentes)</a>
+                <a href="tortuga.html">Tortuga(Testudines)</a>
+                <a href="iguana.html">Iguana (Iguana iguana)</a>
+                <a href="camaleon.html">Camaleón (Chamaeleonidae)</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
